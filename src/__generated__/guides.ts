@@ -24,6 +24,52 @@ export const guides = {
     },
     Guide: React.lazy(() => import("~/../guides/Home.mdx")),
   },
+  "/3ds-alt-settings/": {
+    meta: {
+      categories: ["NDS Tools"],
+      tags: ["info"],
+      isNew: true,
+      title: "3DS Alt Settings - 3DS Settings App for RNG",
+      navDrawerTitle: "3DS Alt Settings",
+      description:
+        "Set 3DS system time without rebooting - useful for faster, more consistent Pokemon RNG attempts.",
+      slug: "/3ds-alt-settings/",
+      isRoughDraft: false,
+      hideFromNavDrawer: false,
+      addedOn: "2025-07-03",
+      translation: null,
+      layout: "guide",
+      canonical: null,
+      type: "baseGuide",
+      file: "guides/Gen 4/3DS Alt Settings.mdx",
+      translations: null,
+      displayAttributes: [],
+    },
+    Guide: React.lazy(() => import("~/../guides/Gen 4/3DS Alt Settings.mdx")),
+  },
+  "/3ds-helper/": {
+    meta: {
+      categories: ["NDS Tools"],
+      tags: ["info"],
+      isNew: true,
+      title: "3DS Timer Helper",
+      navDrawerTitle: "3DS Timer Helper",
+      description:
+        "Easier 3DS RNG without homebrew using precise timer starts.",
+      slug: "/3ds-helper/",
+      isRoughDraft: false,
+      hideFromNavDrawer: false,
+      addedOn: "2025-07-03",
+      translation: null,
+      layout: "guide",
+      canonical: null,
+      type: "baseGuide",
+      file: "guides/Gen 4/3DS Helper.mdx",
+      translations: null,
+      displayAttributes: ["video_guide"],
+    },
+    Guide: React.lazy(() => import("~/../guides/Gen 4/3DS Helper.mdx")),
+  },
   "/about/": {
     meta: {
       categories: ["Home"],
@@ -474,6 +520,34 @@ export const guides = {
         import("~/../guides/Tools and Emulators/Connect Dolphin To GBA.mdx"),
     ),
   },
+  "/consistent-platinum-rng/": {
+    meta: {
+      categories: ["Diamond, Pearl, and Platinum"],
+      tags: ["info"],
+      isNew: true,
+      title: "More consistent Platinum RNG",
+      navDrawerTitle: "Consistent Platinum RNG",
+      description:
+        "New research for more consistent Platinum RNG—get shiny, high-IV Pokémon more easily.",
+      slug: "/consistent-platinum-rng/",
+      isRoughDraft: false,
+      hideFromNavDrawer: false,
+      addedOn: "2025-07-03",
+      translation: null,
+      layout: "guide",
+      canonical: null,
+      type: "baseGuide",
+      file: "guides/Gen 4/Diamond, Pearl, and Platinum/Consistent Platinum RNG.mdx",
+      translations: null,
+      displayAttributes: [],
+    },
+    Guide: React.lazy(
+      () =>
+        import(
+          "~/../guides/Gen 4/Diamond, Pearl, and Platinum/Consistent Platinum RNG.mdx"
+        ),
+    ),
+  },
   "/crystal/": {
     meta: {
       categories: ["Game Hub"],
@@ -513,7 +587,10 @@ export const guides = {
       canonical: null,
       type: "baseGuide",
       file: "guides/Tools and Emulators/Delete Save.mdx",
-      translations: null,
+      translations: {
+        en: "/delete-pokemon-save/",
+        es: "/es-delete-pokemon-save/",
+      },
       displayAttributes: [],
     },
     Guide: React.lazy(
@@ -566,6 +643,29 @@ export const guides = {
       displayAttributes: [],
     },
     Guide: React.lazy(() => import("~/../guides/Hubs.mdx")),
+  },
+  "/dppt-3ds-rng/": {
+    meta: {
+      categories: ["Diamond, Pearl, and Platinum"],
+      tags: ["info"],
+      isNew: true,
+      title: "Diamond, Pearl, and Platinum 3DS RNG",
+      navDrawerTitle: "3DS RNG",
+      description:
+        "Learn how to RNG using a 3DS in Diamond, Pearl, and Platinum for shiny, high-IV Pokémon.",
+      slug: "/dppt-3ds-rng/",
+      isRoughDraft: false,
+      hideFromNavDrawer: false,
+      addedOn: "2025-07-03",
+      translation: null,
+      layout: "guide",
+      canonical: null,
+      type: "baseGuide",
+      file: "guides/Gen 4/3DS RNG.mdx",
+      translations: null,
+      displayAttributes: ["video_guide"],
+    },
+    Guide: React.lazy(() => import("~/../guides/Gen 4/3DS RNG.mdx")),
   },
   "/dppt-advance-rng/": {
     meta: {
@@ -1031,6 +1131,28 @@ export const guides = {
     Guide: React.lazy(
       () => import("~/../guides/Gen 3/Emerald/Gen 3 TID SID Generator.mdx"),
     ),
+  },
+  "/emerald-wild/": {
+    meta: {
+      categories: ["Emerald"],
+      tags: ["retail"],
+      isNew: false,
+      title: "Emerald Wild Searcher",
+      navDrawerTitle: "Emerald Wild Searcher",
+      description: "Emerald Wild Searcher",
+      slug: "/emerald-wild/",
+      isRoughDraft: true,
+      hideFromNavDrawer: false,
+      addedOn: null,
+      translation: null,
+      layout: "guide",
+      canonical: null,
+      type: "baseGuide",
+      file: "guides/Gen 3/Emerald/Gen 3 Wild.mdx",
+      translations: null,
+      displayAttributes: ["web_tool"],
+    },
+    Guide: React.lazy(() => import("~/../guides/Gen 3/Emerald/Gen 3 Wild.mdx")),
   },
   "/emerald/": {
     meta: {
@@ -2055,6 +2177,36 @@ export const guides = {
       () => import("~/../guides/Gen 7/Time Finder.js (Citra).mdx"),
     ),
   },
+  "/es-delete-pokemon-save/": {
+    meta: {
+      categories: ["GBA Tools", "NDS Tools", "3DS Tools", "Switch Tools"],
+      tags: ["any"],
+      isNew: false,
+      title: "Como eliminar partidas de Pokémon",
+      navDrawerTitle: "Como eliminar partidas de Pokémon",
+      description: "Como eliminar partidas de Pokémon",
+      slug: "/es-delete-pokemon-save/",
+      isRoughDraft: false,
+      hideFromNavDrawer: true,
+      addedOn: null,
+      translation: { enSlug: "/delete-pokemon-save/", language: "es" },
+      layout: "guide",
+      canonical: null,
+      type: "translatedGuide",
+      file: "guides/Translations/es/Tools and Emulators/Delete Save.mdx",
+      translations: {
+        en: "/delete-pokemon-save/",
+        es: "/es-delete-pokemon-save/",
+      },
+      displayAttributes: [],
+    },
+    Guide: React.lazy(
+      () =>
+        import(
+          "~/../guides/Translations/es/Tools and Emulators/Delete Save.mdx"
+        ),
+    ),
+  },
   "/es-gen2-celebi/": {
     meta: {
       categories: ["Gold, Silver, Crystal"],
@@ -2655,6 +2807,29 @@ export const guides = {
       displayAttributes: [],
     },
     Guide: React.lazy(() => import("~/../guides/Hubs.mdx")),
+  },
+  "/hgss-3ds-rng/": {
+    meta: {
+      categories: ["HeartGold and SoulSilver"],
+      tags: ["info"],
+      isNew: true,
+      title: "HeartGold and Soulsilver 3DS RNG",
+      navDrawerTitle: "3DS RNG",
+      description:
+        "Learn how to RNG using a 3DS in HeartGold and SoulSilver for shiny, high-IV Pokémon.",
+      slug: "/hgss-3ds-rng/",
+      isRoughDraft: false,
+      hideFromNavDrawer: false,
+      addedOn: "2025-07-03",
+      translation: null,
+      layout: "guide",
+      canonical: null,
+      type: "baseGuide",
+      file: "guides/Gen 4/3DS RNG.mdx",
+      translations: null,
+      displayAttributes: ["video_guide"],
+    },
+    Guide: React.lazy(() => import("~/../guides/Gen 4/3DS RNG.mdx")),
   },
   "/hgss-cute-charm/": {
     meta: {
@@ -3578,7 +3753,7 @@ export const guides = {
       categories: ["HeartGold and SoulSilver"],
       tags: ["retail"],
       isNew: false,
-      title: "HeartGold and Soulsilver Starter RNG",
+      title: "HeartGold and SoulSilver Starter RNG",
       navDrawerTitle: "Starter RNG",
       description:
         "Learn how to RNG starters in HeartGold and SoulSilver for shiny, high-IV Pokémon.",
@@ -6684,6 +6859,8 @@ export const guides = {
 
 export const guideSlugs = [
   "/",
+  "/3ds-alt-settings/",
+  "/3ds-helper/",
   "/about/",
   "/azahar-setup/",
   "/bdsp-advance-rng/",
@@ -6702,10 +6879,12 @@ export const guideSlugs = [
   "/channel-jirachi/",
   "/citrarng-setup/",
   "/connect-dolphin-to-gba/",
+  "/consistent-platinum-rng/",
   "/crystal/",
   "/delete-pokemon-save/",
   "/desmume-setup/",
   "/diamond-pearl-and-platinum/",
+  "/dppt-3ds-rng/",
   "/dppt-advance-rng/",
   "/dppt-cute-charm/",
   "/dppt-initial-seed-retail/",
@@ -6724,6 +6903,7 @@ export const guideSlugs = [
   "/emerald-sid-feebas/",
   "/emerald-static/",
   "/emerald-tidsid-generator/",
+  "/emerald-wild/",
   "/emerald/",
   "/emulator-b2w2-dream-radar/",
   "/emulator-b2w2-runasdate-inital-seed/",
@@ -6763,6 +6943,7 @@ export const guideSlugs = [
   "/emulator-rs-wishmaker/",
   "/emulator-sm-time-finder/",
   "/emulator-usum-time-finder/",
+  "/es-delete-pokemon-save/",
   "/es-gen2-celebi/",
   "/es-gen2-starters/",
   "/experiments/",
@@ -6787,6 +6968,7 @@ export const guideSlugs = [
   "/gen3-glossary/",
   "/gen3-sid/",
   "/heart-gold-and-soul-silver/",
+  "/hgss-3ds-rng/",
   "/hgss-cute-charm/",
   "/hgss-initial-seed/",
   "/hgss-rng-advance/",
